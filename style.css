@@ -1,0 +1,15 @@
+/* selector css */
+/*1, universal selector  */
+*{
+    color: blue;
+}
+
+/*2, element or tag selector */
+p{
+    color: red;
+}
+
+/*3, class selector */
+.copy{
+    color: green;
+}
