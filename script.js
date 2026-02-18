@@ -383,7 +383,7 @@ const booleans = [true, false, true];
 // console.log(booleans[1]);
 
 
-const nestedArray = [1, "hello", true, { name: "Bob" }, [2, 3, 4]];
+// const nestedArray = [1, "hello", true, { name: "Bob" }, [2, 3, 4]];
 // console.log(nestedArray[3].name);
 // console.log(nestedArray[3]);
 // console.log(nestedArray[4][1]);
@@ -572,12 +572,7 @@ for(sumofNumbers = 0; sumofNumbers.length === 6; sumofNumbers++){
 //   gender:"female",
 //    state:"Rivers"
 // },
-// dataAnalysis={
-//    name:"ada",
-//    age:9,
-//   gender:"female",
-//    state:"Rivers"
-// }, 
+
 
 //  webdev={
 //    name:"ade",
@@ -600,17 +595,111 @@ for(sumofNumbers = 0; sumofNumbers.length === 6; sumofNumbers++){
 // assignment 
 // write a program that collect data of  foods (5) with the following( type, class, quantity, description, name. and add 3 features to it , display how you destructure, rename, add value and use the spread operator )
 
-//  function in javascript
+//  function in javascript - function are reusable components in javascript 
 
 
 
 // function name() {
-   
+    
 // }
 // run, call, execute
 
+//  dataAnalysis={
+//  name:"ada",
+//     age:9,
+//    gender:"female",
+//    state:"Rivers"
+// }
+
+
 // function greeting(){
-//    console.log(" Hello World")
+//    console.log(` Hi my name is ${dataAnalysis.name}` )
 // }
 
 // greeting()
+
+
+// const nestedArray = [1, "hello", true, { name: "Bob" }, [2, 3, 4]];
+
+// function greeting(){
+//    console.log(` Hi my name is ${nestedArray[3].name}` )
+// }
+
+// greeting()
+
+
+// params -- you can also call it local variable
+// local variables
+// global variables - it can be access anywhere 
+
+// const firstname = "Ada" // global varaible
+
+// function names() {
+//    console.log(`${firstname}`)
+// }
+
+// names()
+
+
+// task. write a function that add two numbers and the sum is 10
+
+// params --- local variable 
+// function names(firstName , lastName) {
+//    console.log(`${firstName} ${lastName}`)
+   
+// }
+
+// names("ada", "chima")
+
+
+// const a = 5
+// const b = 5
+
+// function sum () {
+//    console.log(a + b)
+// }
+
+// sum()
+
+
+function sum(a, b) {
+   console.log(a + b)
+   
+}
+sum( 5,  5)
+
+// function sum(a, b) {
+//    console.log(a + b)
+   
+// }
+// sum( a= 5,  b= 5)
+
+
+ dataAnalysis={
+ name:"ada",
+    age:9,
+   gender:"female",
+   state:"Rivers"
+}
+
+
+function data({name,age, gender, state}= dataAnalysis) {
+ 
+   // return[name, age]- array
+
+   // return  {name,age, gender, state }- object
+
+   // return name - variable
+
+   console.log(firstname, age, gender)
+   
+}
+
+data()
+
+//  const result = data()- when using the return 
+//  console.log(result)
+
+
+// return statement 
+
