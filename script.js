@@ -675,15 +675,15 @@ sum( 5,  5)
 // sum( a= 5,  b= 5)
 
 
- dataAnalysis={
- name:"ada",
-    age:9,
-   gender:"female",
-   state:"Rivers"
-}
+//  dataAnalysis={
+//  name:"ada",
+//     age:9,
+//    gender:"female",
+//    state:"Rivers"
+// }
 
 
-function data({name,age, gender, state}= dataAnalysis) {
+// function data({name,age, gender, state}= dataAnalysis) {
  
    // return[name, age]- array
 
@@ -691,11 +691,11 @@ function data({name,age, gender, state}= dataAnalysis) {
 
    // return name - variable
 
-   console.log(firstname, age, gender)
+//    console.log(firstname, age, gender)
    
-}
+// }
 
-data()
+//data()
 
 //  const result = data()- when using the return 
 //  console.log(result)
@@ -703,3 +703,69 @@ data()
 
 // return statement 
 
+// object = {
+//    name: "sarah",
+//    age:9,
+//    subject:[{gender:"female"}]
+
+// }
+
+// arrow function 
+
+//   const name= (params) => {
+   
+// }
+
+//   const add =(a, b) => {
+//    return a + b
+   
+// }
+
+
+
+// console.log(add(2,3))
+
+// const result = add(4,5)
+// console.log(result)
+
+
+
+
+Studentgrade = [
+{ id: 1, name: "John", grade: "A" }, 
+{ id: 2, name: "Emma", grade: "B" }, 
+{ id: 3, name: "Liam", grade: "A" }, 
+{ id: 4, name: "Olivia", grade: "C" },
+{ id: 5, name: "Noah", grade: "B" } 
+]
+
+// if (Studentgrade[1].grade === "B") {
+//  console.log("promoted to the next class")  
+// }else{
+//    console.log("repeat")
+// }
+
+// for ( let student = 0; student < Studentgrade.length ; student++) {
+//    console.log(Studentgrade[student])
+
+   
+
+// }
+
+//  for ( let student = 0; student < Studentgrade.length ; student++) {
+//   console.log(Studentgrade[student] === "B")
+//     if (Studentgrade[student].grade) {
+//  console.log("promoted to the next class")
+//     }
+// // } else if (Studentgrade.grade === "C") {
+// //  console.log(" Credit")  
+
+   
+// // } else if (Studentgrade.grade === "A") {
+// //  console.log(" distinction ")  }
+
+// // else{
+// //    console.log("repeat")
+// // }
+
+// }
