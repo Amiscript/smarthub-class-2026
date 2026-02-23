@@ -769,3 +769,82 @@ Studentgrade = [
 // // }
 
 // }
+
+
+// array destructuring
+
+// const student = ["John", "Emma", "Liam", "Olivia", "Noah"]
+
+// const [student1, student2, student3, student4, student5] = student
+
+// console.log(student1)
+
+
+const student = [
+   { id: 1, name: "John", grade: "A"}, //
+   { id: 2, name: "Emma", grade: "B" }, 
+   { id: 3, name: "Liam", grade: "A" }, 
+   { id: 4, name: "Olivia", grade: "C" },
+   { id: 5, name: "Noah", grade: "B" } 
+]
+
+const [student1, student2, student3, student4, student5] = student
+
+// const [student1, student2, ...student3] = student
+
+// const [...student6] = student
+
+// console.log(student3)
+
+// console.log(student6[0].name)
+
+
+
+
+// ternary operator
+
+// condition ? expressionIfTrue : expressionIfFalse
+
+age = 17
+
+// const result = age >= 18 ? "He or she is eligible to vote" : "He or she is not eligible to vote"
+
+// console.log(result)
+
+
+//advanced array methods -forEach, map, filter, reduce, find,  some, every, sort.
+
+// forEach - executes a provided function once for each array element
+
+const num = [1, 2, 3, 4, 5];
+
+// function printNumber(num) {
+//    console.log(num);
+// }
+
+// num.forEach(printNumber)
+
+num.forEach(function(num) {
+   console.log(num);
+})
+
+
+
+
+
+const names = ["John", "Emma", "Liam", "Olivia", "Noah"];
+
+names.forEach(displayNames =>{
+   console.log(displayNames)
+
+})
+
+
+// assignment on forEach
+// write a program that takes in an array of numbers and outputs the square of each number using the forEach method.
+
+// write a program that takes in an array of strings and outputs the length of each string using the forEach method.
+
+// for array destructuring
+
+// write a program that takes in an array of objects representing students with properties name and grade, and outputs the names of students who received a grade of "A" using array destructuring and the forEach method.
