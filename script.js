@@ -662,11 +662,11 @@ for(sumofNumbers = 0; sumofNumbers.length === 6; sumofNumbers++){
 // sum()
 
 
-function sum(a, b) {
-   console.log(a + b)
+// function sum(a, b) {
+//    console.log(a + b)
    
-}
-sum( 5,  5)
+// }
+// sum( 5,  5)
 
 // function sum(a, b) {
 //    console.log(a + b)
@@ -731,13 +731,13 @@ sum( 5,  5)
 
 
 
-Studentgrade = [
-{ id: 1, name: "John", grade: "A" }, 
-{ id: 2, name: "Emma", grade: "B" }, 
-{ id: 3, name: "Liam", grade: "A" }, 
-{ id: 4, name: "Olivia", grade: "C" },
-{ id: 5, name: "Noah", grade: "B" } 
-]
+// Studentgrade = [
+// { id: 1, name: "John", grade: "A" }, 
+// { id: 2, name: "Emma", grade: "B" }, 
+// { id: 3, name: "Liam", grade: "A" }, 
+// { id: 4, name: "Olivia", grade: "C" },
+// { id: 5, name: "Noah", grade: "B" } 
+// ]
 
 // if (Studentgrade[1].grade === "B") {
 //  console.log("promoted to the next class")  
@@ -780,15 +780,15 @@ Studentgrade = [
 // console.log(student1)
 
 
-const student = [
-   { id: 1, name: "John", grade: "A"}, //
-   { id: 2, name: "Emma", grade: "B" }, 
-   { id: 3, name: "Liam", grade: "A" }, 
-   { id: 4, name: "Olivia", grade: "C" },
-   { id: 5, name: "Noah", grade: "B" } 
-]
+// const student = [
+//    { id: 1, name: "John", grade: "A"}, //
+//    { id: 2, name: "Emma", grade: "B" }, 
+//    { id: 3, name: "Liam", grade: "A" }, 
+//    { id: 4, name: "Olivia", grade: "C" },
+//    { id: 5, name: "Noah", grade: "B" } 
+// ]
 
-const [student1, student2, student3, student4, student5] = student
+// const [student1, student2, student3, student4, student5] = student
 
 // const [student1, student2, ...student3] = student
 
@@ -816,7 +816,7 @@ age = 17
 
 // forEach - executes a provided function once for each array element
 
-const num = [1, 2, 3, 4, 5];
+// const num = [1, 2, 3, 4, 5];
 
 // function printNumber(num) {
 //    console.log(num);
@@ -824,20 +824,20 @@ const num = [1, 2, 3, 4, 5];
 
 // num.forEach(printNumber)
 
-num.forEach(function(num) {
-   console.log(num);
-})
+// num.forEach(function(num) {
+//    console.log(num);
+// })
 
 
 
 
 
-const names = ["John", "Emma", "Liam", "Olivia", "Noah"];
+// const names = ["John", "Emma", "Liam", "Olivia", "Noah"];
 
-names.forEach(displayNames =>{
-   console.log(displayNames)
+// names.forEach(displayNames =>{
+//    console.log(displayNames)
 
-})
+// })
 
 
 // assignment on forEach
@@ -848,3 +848,182 @@ names.forEach(displayNames =>{
 // for array destructuring
 
 // write a program that takes in an array of objects representing students with properties name and grade, and outputs the names of students who received a grade of "A" using array destructuring and the forEach method.
+
+
+//write a program that takes in an array of objects representing students with properties name and grade,and outputs the name of each student who received a grade of A using destructuring and forEach method
+// const students = [
+//     { name: "Ade", grade: "A" },
+//     { name: "Bella", grade: "B" },
+//     { name: "Chima", grade: "A" },
+//     { name: "Daniel", grade: "C" }
+// ];
+
+
+// function select() {
+//    students.forEach(student => {
+//       // const { name, grade } = student;
+//     if (student.grade === "A") {
+//         console.log(student.name);
+//     }
+// });
+// }
+
+// select()
+
+// map() - creates a new array populated with the results of calling a provided function on every element in the calling array
+
+//numbers
+// const double = [1, 2, 3, 4, 5];
+
+// double.map(mult => {
+//    console.log(mult * 2);
+// })
+
+//`strings
+// const names = ["John", "Emma", "Liam", "Olivia", "Noah"];
+// names.map(name => {
+//    console.log(name.toUpperCase());
+// })
+
+// objects
+// const students1 = [
+//     { name: "Ade", grade: "A" },
+//       { name: "Bella", grade: "B" },
+//       { name: "Chima", grade: "A" },
+//       { name: "Daniel", grade: "C" }
+// ];
+
+// students1.map(student => {
+//    if (student.grade === "A") {
+//       console.log(student.name);
+//    }
+// })
+
+
+//filter() - creates a new array with all elements that pass the test implemented by the provided function
+
+// strings
+// const names1 = ["John", "Emma", "Liam", "Elivia", "Noah"];
+
+// names1.filter(name => {
+//    if (name.startsWith("E")) {
+//       console.log(name);
+//    }  
+// })
+
+// numbers
+const numbers1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+//odd numbers
+
+numbers1.filter(num => {
+   if (num % 2 !== 0) {
+      console.log(num);
+   }
+})
+
+
+//reduce() - executes a reducer function on each element of the array, resulting in a single output value
+
+const numbers2 = [1, 2, 3, 4, 5];
+                  // 1=> 1 + 2 = 3
+                  // 3 => 3 + 3 = 6
+                  // 6 => 6 + 4 = 10
+                  // 10 => 10 + 5 = 15
+const cal =  numbers2.reduce((acctualvalue, currentValue) => {
+   return acctualvalue + currentValue;
+})
+
+console.log(cal)
+
+//strings
+const names2 = ["John", "Emma", "Liam", "Olivia", "Noah"];
+               //  john => "John" + " " + "Emma" = "John Emma"
+               //  "John Emma" => "John Emma" + " " + "Liam" = "John Emma Liam"
+               //  "John Emma Liam" => "John Emma Liam" + " " + "Olivia" = "John Emma Liam Olivia"
+               //  "John Emma Liam Olivia" => "John Emma Liam Olivia" + " " + "Noah" = "John Emma Liam Olivia Noah"
+
+const nameString = names2.reduce((acctualvalue, currentValue) => {
+   // return acctualvalue + " " + currentValue;
+   return `${acctualvalue} ${currentValue}`;
+
+})
+console.log(nameString);
+
+// find() - returns the value of the first element in the array that satisfies the provided testing function. Otherwise undefined is returned
+
+
+
+const stud = [
+    { name: "Ade", grade: "C" },
+    { name: "Bella", grade: "D" },
+    { name: "Chima", grade: "B" },
+    { name: "Daniel", grade: "A" }
+];
+
+stud.find(student => {
+   if (student.grade === "A") {
+      console.log(student.name);
+   }
+})
+
+// strings
+const names3 = ["John", "Emma", "Liam", "Olivia", "Loah"];
+
+names3.find(name => {     
+   if (name.startsWith("L")) {
+      console.log(name);
+   }  
+})
+
+
+//every() - tests whether all elements in the array pass the test implemented by the provided function. It returns a Boolean value.
+
+// const numbers3 = [2, 4, 6, 8, 10,11];
+
+// const even = numbers3.every(num => {
+//    return num % 2 === 0;
+// })
+
+// console.log(even)
+
+// strings
+const names4 = ["John", "Emma", "Liam", "Olivia", "Noah"];
+
+const fourletter = names4.every(name => {
+   return name.length === 4;
+})
+
+console.log(fourletter)
+
+//some() - tests whether at least one element in the array passes the test implemented by the provided function. It returns a Boolean value.
+
+const numbers3 = [2, 4, 6, 8, 10,11];
+
+const even = numbers3.some(num => {
+   return num % 2 === 0;
+})
+
+console.log(even)
+
+// sort() - sorts the elements of an array in place and returns the sorted array
+
+// numbers
+
+const numbers4 = [5, 2, 10, 9, 1, 5, 6, 20, 100];
+// numbers4.sort((a, b) => { 
+// 5-2 = 3 => positive number => 5 comes after 2
+// 2-5 = -3 => negative number => 2 comes before 5
+// 10-9 = 1 => positive number => 10 comes after 9
+// 9-10 = -1 => negative number => 9 comes before 10
+// 1-5 = -4 => negative number => 1 comes before 5
+// 5-1 = 4 => positive number => 5 comes after 1
+// 6-5 = 1 => positive number => 6 comes after 5
+
+
+const arr = numbers4.sort((a, b) => {
+   return a - b;
+})
+
+console.log(arr)
+
