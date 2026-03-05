@@ -816,7 +816,63 @@ age = 17
 
 // forEach - executes a provided function once for each array element
 
+
 // const num = [1, 2, 3, 4, 5];
+
+// num.forEach(number => {console.log(number);})
+
+// nested function
+
+// add two numbers using nested function
+
+// let a = 5;
+// let b = 10;
+
+
+// function outerFunction() {
+
+//    console.log(a + b);
+//    // inner function
+//    function innerFunction() {
+//       console.log(`The sum of ${a} and ${b} is ${a + b}`);
+//    }
+//    innerFunction();
+// }
+
+// function secFunction() {
+//    console.log(a * b);  }
+
+//    secFunction();
+
+// outerFunction();
+
+
+
+// callback function
+
+// function greet(name) {
+//    console.log(`Hello ${name}`);
+// }  
+
+// function processUserInput(callback) {
+//    const name = "Alice";
+//    callback(name);
+// }
+
+// processUserInput(greet);
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // function printNumber(num) {
 //    console.log(num);
@@ -874,6 +930,7 @@ age = 17
 
 //numbers
 // const double = [1, 2, 3, 4, 5];
+
 
 // double.map(mult => {
 //    console.log(mult * 2);
@@ -1027,3 +1084,213 @@ const arr = numbers4.sort((a, b) => {
 
 console.log(arr)
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// map()
+// numbers 
+const val = [1,2,3,4,5,6]
+
+const double = val.map(function(vals) {
+   return vals * 2
+})
+
+console.log(double);
+
+// string 
+
+const name_of_pupils = ["Goodwill", "Lilly", "Hilltop", "Kelly"]
+
+//filter()
+ const list = name_of_pupils.filter((names)=>{
+   //  if(names.includes("i")){
+   //    return names
+   //  }
+
+   if (names.startsWith("H")) {
+          return names
+   }
+
+ })
+
+ console.log(list);
+
+
+ 
+
+
+ 
+
+//  startsWith()
+
+
+// //reduce() - executes a reducer function on each element of the array, resulting in a single output value
+
+const rnumbers = [1, 2, 3, 4, 5,6];
+
+ //                    1=> 1 + 2 = 3
+//                   // 3 => 3 + 3 = 6
+//                   // 6 => 6 + 4 = 10
+//                   // 10 => 10 + 5 = 15
+                        15+6
+
+ const n = rnumbers.reduce((c, r)=>{
+   return c + r
+})
+
+console.log(n);
+
+//                  
+// const cal =  numbers2.reduce((acctualvalue, currentValue) => {
+//    return acctualvalue + currentValue;
+// })
+
+console.log(cal)
+
+
+
+const nameevery = ["Goodwill", "Lilly", "Hilltop", "Kelly", "Ada"]
+
+
+// every()
+
+ const look = nameevery.every((lookforL)=>{
+   if (lookforL.includes("l")) {
+      return lookforL
+      
+   }
+ })
+
+ console.log(look);
+
+
+// some()
+ const looksome = nameevery.some((lookforL)=>{
+   if (lookforL.includes("l")) {
+      return lookforL
+      
+   }
+ })
+
+ console.log(looksome);
+
+
+
+ const findstudent = [
+    { name: "Ade", grade: "C" },
+    { name: "Bella", grade: "D" },
+    { name: "Chima", grade: "A" },
+    { name: "Daniel", grade: "A" }
+];
+
+
+
+// find()
+
+const gradA =  findstudent.find((f)=>{
+ if (f.grade === "A") {
+   return f
+ }
+})
+
+console.log(gradA);
+
+
+// sort()
+// numbers
+const count= [1,5,7,6,8,2,10,20]
+            
+ const counts= count.sort((a, b)=>{
+  return a - b
+ })
+ console.log(counts);
+
+
+// const c = count.sort((a,b)=>{
+//   return a+b
+// })
+
+// console.log(c);
+
+// Date
+// new Date() is the format for date
+
+// sunday- sat
+// 0-6
+// jan-dec -0-11
+const date = new Date() 
+const Day = date.getDay() +1
+const Month = date.getMonth() +1
+const hour = date.getHours()
+const get = date.getTime()
+console.log(get);
+
+// 1 second = 1000 mill
+
+
+// setTimeout(function, delay) - is used to run  a function after a delay in millesconds
+// setTimeInterval()
+//clearTimeinterval()
+
+
+
+
+// setTimeout(()=>{
+//    console.log("Ada is tired for today class, show this in 1 sec")
+// }, 5000 )
+
+// setTimeout(()=>{
+// a = 5
+// b =2
+// const sum =  a + b
+// console.log(sum)
+// },6000)
+
+
+// setInterval(function, delay) - run a function repeatedly after a fixed time interval
+
+// setInterval(()=>{
+//  a = 5
+// b =2
+// sum =  a + b
+// sum++
+// console.log(sum)
+// }, 3000)
+
+
+
+
+//task - create a function that get date, and at every 2sec, get year, atevry 3sec get day, at every 4sec get month and this should run at 6sec 
+
+const infor = () => {
+  const date = new Date();
+  
+  setTimeout(() => {
+    setInterval(() => {
+      console.log(date.getFullYear());
+    }, 2000);
+
+    setInterval(() => {
+      console.log(date.getDate()); 
+    }, 3000);
+
+    setInterval(() => {
+      console.log(date.getMonth() + 1);
+    }, 4000);
+  }, 6000);
+};
+
+infor();
