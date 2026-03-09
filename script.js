@@ -1294,3 +1294,9 @@ const infor = () => {
 };
 
 infor();
+
+
+
+const now = new Date ()
+
+
