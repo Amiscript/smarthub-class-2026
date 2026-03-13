@@ -1,15 +1,122 @@
-/* selector css */
-/*1, universal selector  */
-*{
-    color: blue;
+/* selectors */
+/* 1.universal  (*)       */ 
+/* 2.tag */
+/* 3.class (.) */
+/* 4. id  (#) */
+
+
+/* tag name */
+div{
+    height: 200px;
+    width: 200px;
+    background-color: rgb(252, 255, 253);
+
 }
 
-/*2, element or tag selector */
-p{
-    color: red;
+
+
+/* class */
+.ada{
+    height: 200px;
+    width: 200px;
+    background-color: black;
 }
 
-/*3, class selector */
-.copy{
-    color: green;
+
+/* id */
+#chima{
+     height: 200px;
+    width: 200px;
+    background-color: brown;
+}
+
+
+.taskone{
+    margin-bottom: 50px;
+   display: flex;
+   gap: 20px;
+
+
+}
+.tasktwo{
+ display: flex;
+ gap: 20px;
+ 
+
+}
+.box{
+    height: 200px;
+    width: 200px;
+    background-color: yellow;
+
+
+}
+.boxone{
+
+    height: 200px;
+    width: 400px;
+    background-color: gray;
+
+}
+.boxtwo{
+    height: 200px;
+    width: 200px;
+    background-color: green;
+
+}
+
+.B{
+     height: 200px;
+    width: 200px;
+    background-color:burlywood;
+}
+
+
+.c{
+ display: flex;
+ flex-direction: column;
+ gap: 10px;
+}
+.c1{
+ height: 100px;
+    width: 200px;
+    background-color:orange;
+    
+}
+.c2{
+     height: 100px;
+    width: 200px;
+    background-color:olive;
+
+}
+
+.d{
+     height: 200px;
+    width: 200px;
+    background-color:gold;
+
+}
+
+.f{
+ height: 200px;
+    width: 650px;
+    background-color:red;
+}
+
+.taskthree{
+
+
+    
+}
+
+.one{
+    display: flex;
+    margin-top: 50px;
+    gap: 20px;
+
+}
+
+.two{
+    margin-top: 50px;
+
 }
