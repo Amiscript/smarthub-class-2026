@@ -1,0 +1,38 @@
+*{
+    color: white;
+     background-color: rgb(2, 2, 145);
+     background-image: url("./images/courage-man-jump-through-gap-hill-business-concept-idea_1323-262.avif");
+    
+}
+
+
+main{
+   
+}
+.image{
+    height: 50px;
+    width: 50px;
+}
+
+nav{
+    display: flex;
+    margin-left:50px ;
+}
+
+.list  ul {
+    display: flex;
+    gap: 20px;
+}
+
+.logo{
+    margin-right: 200px;
+}
+
+.text{
+    margin-left: 50px;
+}
+
+button{
+    margin-left: 50px;
+    color: white;
+}
