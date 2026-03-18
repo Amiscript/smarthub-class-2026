@@ -19,6 +19,7 @@ div{
 .ada{
     height: 200px;
     width: 200px;
+    border-radius: 100px;
     background-color: black;
 }
 
@@ -27,6 +28,8 @@ div{
 #chima{
      height: 200px;
     width: 200px;
+    border-radius: 10px 10px 10px 40px;
+    border: 10px solid rgb(116, 244, 42);
     background-color: brown;
 }
 
