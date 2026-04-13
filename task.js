@@ -1,5 +1,6 @@
 // DOM - Document Object Module
 
+
 // console.log(document.body);
 // console.log(document.head);
 
@@ -83,16 +84,71 @@ const add = () => {
     // const two = parseInt(input2.value)
     const one = Number(input.value)
     const two = Number(input2.value)
-    const sum = one + two   
+    const sum = one * two   
     result.textContent = sum   
  
 }
 
-
-
-
 submit.addEventListener("click", add)
 
 
+// JSON - JavaScript Object Notation
+// JSON is a lightweight data interchange format that is easy for humans to read and write, and easy for machines to parse and generate. It is based on a subset of the JavaScript Programming Language, Standard ECMA-262 3rd Edition - December 1999. JSON is a text format that is completely language independent but uses conventions that are familiar to programmers of the C-family of languages, including C, C++, C#, Java, JavaScript, Perl, Python, and many others. These properties make JSON an ideal data interchange language.
+
+// JSON syntax rules
+// Data is in name/value pairs
+// Data is separated by commas
+// Curly braces hold objects
+// Square brackets hold arrays
 
 
+student = [
+    {
+        name: "Chima",
+        age: 20,
+        course: "Web development"
+    },
+    {   
+        name: "John",
+        age: 22,
+        course: "Data Science"  
+    },
+    {
+        name: "Jane",
+        age: 21,
+        course: "Cybersecurity"
+    }
+]
+
+// JSON.stringify() - converts a JavaScript object or value to a JSON string
+// JSON.parse() - parses a JSON string to a JavaScript object or value
+
+// JSON.stringify(student)
+ const studentJSON = JSON.stringify(student)
+
+
+// const parsedStudent = JSON.parse(studentJSON)
+// console.log(parsedStudent);
+
+
+// localStorage - allows you to store data in the browser
+
+// localStorage methods
+
+//setItem - allows you to set an item in the localStorage
+ 
+// localStorage.setItem(studentJSON)
+localStorage.setItem("student", studentJSON);
+
+const savedData = localStorage.getItem("student");
+console.log(savedData);
+// getItem - allows you to get an item from the localStorage
+// removeItem - allows you to remove an item from the localStorage
+// clear - allows you to clear all items from the localStorage
+
+localStorage.setItem("chima", studentJSON)
+ JSON.parse(studentJSON)
+ const chimadata = localStorage.getItem("chima")
+ console.log(chimadata);
+ localStorage.removeItem("chima")
+ localStorage.clear()
